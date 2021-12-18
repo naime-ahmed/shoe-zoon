@@ -1,0 +1,30 @@
+.top_product{
+    margin: 50px 6%;
+}
+.top-product-header{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+.all-products{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    grid-gap: 30px;
+}
+
+@media only screen and (max-width: 850px) {
+    .all-products{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 30px;
+        overflow-x: hidden;
+    }
+}
+@media only screen and (max-width: 490px) {
+   
+    .all-products{
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+}

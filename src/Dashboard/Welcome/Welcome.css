@@ -1,0 +1,8 @@
+.welcome_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.welcome_img img{
+    width: 70%;
+}

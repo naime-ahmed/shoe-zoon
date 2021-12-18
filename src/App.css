@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.container{
+  background-color: antiquewhite;
+  color: #282c34;
+  padding: 20px 0 20px 0;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.button{
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  background-color: teal;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px;
+  font-size: 18px;
+  color: aliceblue;
+}
