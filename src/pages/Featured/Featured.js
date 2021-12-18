@@ -9,7 +9,7 @@ const Featured = () => {
     const [allProducts, setAllProducts] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/allProducts')
+        fetch('https://morning-plains-75457.herokuapp.com/allProducts')
             .then(res => res.json())
             .then(data => setAllProducts(data));
     }, [allProducts]);

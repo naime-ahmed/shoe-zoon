@@ -8,7 +8,7 @@ const ManageSingleOd = (props) => {
 
     const handleApproved = (id) => {
 
-        fetch(`http://localhost:5000/updateStatus/${id}`, {
+        fetch(`https://morning-plains-75457.herokuapp.com/updateStatus/${id}`, {
             method:"PUT"
         })
             .then(res => res.json())
@@ -27,7 +27,7 @@ const ManageSingleOd = (props) => {
     const handleDeleteOrder = id => {
         const proceed = window.confirm('you want to delete?')
         if (proceed) {
-            fetch(`http://localhost:5000/deleteOrder/${id}`, {
+            fetch(`https://morning-plains-75457.herokuapp.com/deleteOrder/${id}`, {
             method: "DELETE"
             })
             .then(res => res.json())

@@ -10,7 +10,7 @@ const MyOrders = () => {
 
     const { user } = UseAuth();
     useEffect(() => {
-        fetch('http://localhost:5000/allOrder')
+        fetch('https://morning-plains-75457.herokuapp.com/allOrder')
             .then(res => res.json())
             .then(data => setMyOrders(data?.filter(order => order.name === user.displayName)));
     }, [myOrders]);

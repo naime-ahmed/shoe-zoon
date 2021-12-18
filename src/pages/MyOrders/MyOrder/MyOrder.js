@@ -12,7 +12,7 @@ const MyOrder = (props) => {
     const deleteMyOrder = id => {
         const proceed = window.confirm('are you want to delete ?')
         if (proceed) {
-            fetch(`http://localhost:5000/deleteMyOrder/${id}`, {
+            fetch(`https://morning-plains-75457.herokuapp.com/deleteMyOrder/${id}`, {
             method: "DELETE",
             headers: { "Content-type": "application/json" },
             

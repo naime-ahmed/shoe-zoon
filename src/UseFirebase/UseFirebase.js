@@ -102,7 +102,7 @@ const UseFirebase = () => {
 
     const saveUser = (email, displayName) => {
         const user = { email, displayName };
-        fetch('http://localhost:5000/addUser', {
+        fetch('https://morning-plains-75457.herokuapp.com/addUser', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -113,7 +113,7 @@ const UseFirebase = () => {
     }
 
     useEffect(() => {
-        fetch(`http://localhost:5000/users/${user?.email}`)
+        fetch(`https://morning-plains-75457.herokuapp.com/users/${user?.email}`)
             .then(res => res.json())
             .then(data => setAdmin(data.admin));
     },[user.email])

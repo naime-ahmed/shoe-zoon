@@ -16,7 +16,7 @@ const OrderProduct = () => {
     const { user } = UseAuth();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/orderProduct/${orderItemId}`)
+        fetch(`https://morning-plains-75457.herokuapp.com/orderProduct/${orderItemId}`)
             .then(res => res.json())
             .then(data => setOrderProduct(data));
     }, [orderItemId]);
@@ -24,7 +24,7 @@ const OrderProduct = () => {
 
     const onSubmit = (data) => {
         data.status = "pending";
-        fetch('http://localhost:5000/allOrder', {
+        fetch('https://morning-plains-75457.herokuapp.com/allOrder', {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data)
